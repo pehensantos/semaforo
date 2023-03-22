@@ -1,0 +1,42 @@
+import random
+
+
+ruas = 'rua1' 'rua2', 'rua3',
+carros = ('carro1', 'carro2', 'carro3',)
+
+sem_ped = random.randint(0, 1)
+if sem_ped == 0:
+    sem_ped = 'vermelho'
+elif sem_ped == 1:
+    sem_ped = 'verde'
+
+semaforo = random.randint(0, 1)
+if semaforo == 0:
+    semaforo = 'vermelho'
+
+elif semaforo == 1:
+    semaforo = 'verde'
+
+if semaforo == 'vermelho' and sem_ped == 'vermelho':
+    print('llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+    print('lll CARROS, o semáforo está vermelho. Vocês não podem passar agora!    lll')
+    print('llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+    print('lll PEDESTRES, o semáforo está vermelho. Vocês não podem passar agora! lll')
+    print('llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+
+if semaforo == 'vermelho' and sem_ped == 'verde':
+    print('lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+    print('lll CARROS, o semáforo está vermelho. Vocês não podem passar agora! lll')
+    print('lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+    print('lll PEDESTRES, o semáforo está verde. Vocês podem passar.           lll')
+    print('lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+
+if semaforo == 'verde' and sem_ped == 'vermelho':
+    print('llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+    print('lll CARROS, o semáforo está verde. Vocês podem passar.                 lll')
+    print('llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+    print('lll PEDESTRES, o semáforo está vermelho. Vocês não podem passar agora! lll')
+    print('llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+
+if semaforo == 'verde' and sem_ped == 'verde':
+    print('Os semáforos estão loucos, vamos esperar um pouco até que tudo se resolva.')
